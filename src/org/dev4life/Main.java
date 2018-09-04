@@ -41,11 +41,20 @@ public class Main {
             for (int i = 0; i < messageCount; i++) {
 //                String message = "{\"id\": \"" + i + "\"," +
 //                        "\"message\": \"Message No:" + i + "\"}" ;
+
+//                String message = "{\"id\": \"" + i + "\"," +
+//                        "\"price\": { " +
+//                        "\"amount\": " + i + ", " +
+//                        "\"currency\": \"NOK\"}, " +
+//                        "\"sku\": \"plan.product.2\"} ";
+
                 String message = "{\"id\": \"" + i + "\"," +
-                        "\"price\": { " +
-                        "\"amount\": " + i + ", " +
-                        "\"currency\": \"NOK\"}, " +
-                        "\"sku\": \"plan.product.2\"} ";
+                        "\"timestamp\": \"123456789\", " +
+                        "\"product\": [" +
+                        "{\"key\": \"currency\", " +
+                        "\"value\": \"NOK\"}, " +
+                        "{\"key\": \"sku\", " +
+                        "\"value\": \"plan.product.3\"}] }";
 
                 // convert message to bytes
                 ByteString data = ByteString.copyFromUtf8(message);

@@ -45,7 +45,7 @@ public class Main {
                         "\"price\": { " +
                         "\"amount\": " + i + ", " +
                         "\"currency\": \"NOK\"}, " +
-                        "\"sku\": \"NOK\"} ";
+                        "\"sku\": \"plan.product.2\"} ";
 
                 // convert message to bytes
                 ByteString data = ByteString.copyFromUtf8(message);
